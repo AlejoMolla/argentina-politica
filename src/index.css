@@ -38,9 +38,12 @@
 .aside {
     grid-area: aside;
     padding: 10px;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .aside img {
+    max-height: 350px;
     width: 100%;
     object-fit: cover;
 }

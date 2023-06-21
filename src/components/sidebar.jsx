@@ -1,20 +1,18 @@
 import {
     Nav,
     NavItem,
+    NavLink
 } from "reactstrap"
-import { NavLink } from "react-router-dom"
 
-export default function Sidebar({ sections = [] }) {
+export default function Sidebar({ sections = [], onClick }) {
     return <div className="sidebar bg-body-tertiary">
-        <Nav vertical className="">
-            {sections.map(link => (
-                <NavItem className="mt-2" key={link.toLowerCase().replaceAll(" ", "-")}>
+        <Nav vertical>
+            {sections.map(({titulo, id}) => (
+                <NavItem className="mt-2" key={id}>
                     <NavLink
-                        
-                        to={`#${link.toLowerCase().replaceAll(" ", "-")}`}
-                        className={({isActive}) => "nav-link" + (isActive ? ' active' : '')}
+                        onClick={() => onClick(id)}
                     >
-                        {link}
+                        {titulo}
                     </NavLink>
                 </NavItem>
             ))}
