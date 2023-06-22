@@ -17,12 +17,36 @@
     height: 100vh;
 }
 
+/* @media screen and (max-width: 768px) {
+    .App {
+        grid-template-areas:
+            "navbar"
+            "sidebar"
+            "main"
+            "aside"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, min-content);
+        min-height: 100vh;
+        height: 100%;
+    }
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+} */
+
 .navigation {
     grid-area: navbar;
 }
 
 .sidebar {
     grid-area: sidebar;
+}
+
+.sidebar .active {
+    color: #0a58ca;
 }
 
 .content {
@@ -46,6 +70,7 @@
     max-height: 350px;
     width: 100%;
     object-fit: cover;
+    object-position: top;
 }
 
 /* Error Page */

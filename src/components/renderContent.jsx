@@ -2,8 +2,7 @@ import {
     Card,
     CardBody,
     CardTitle,
-    CardText,
-    Button
+    CardText
 } from 'reactstrap';
 
 export default function RenderContent({ fileJson }) {
@@ -14,19 +13,21 @@ export default function RenderContent({ fileJson }) {
             <h2>{data.titulo}</h2>
             {data.contenido.map(({subtitulo, subcontenido}) => (
                 <>
-                    <h4>{subtitulo}</h4>
-                    <p className="lead">
-                        {subcontenido}
-                    </p>
+                    <h4 className="mt-5">{subtitulo}</h4>
+                    {subcontenido.split('\n').map(paragraph => (
+                        <p className="lead">
+                            {paragraph}
+                        </p>
+                    ))}
                 </>
             ))}
         </div>
         <div className="aside">
             <Card>
-                <img src={"images/" + data.imagen_aside} alt="Evita Perón" />
+                <img src={"images/" + data.imagen_aside} alt={data.imagen_aside.replace('.jpg', '')} />
                 <CardBody>
                     <CardTitle>
-                        {data.titulo_aside}
+                        <b>{data.titulo_aside}</b>
                     </CardTitle>
                     <CardText>
                         {data.contenido_aside}
