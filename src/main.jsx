@@ -8,6 +8,8 @@ import './index.css';
 import Root from './routes/rootPage';
 import ErrorPage, { ErrorElement } from './routes/errorPage';
 import Peronismo from './routes/peronismoPage';
+import Menemismo from './routes/menemismoPage';
+import Kirchnerismo from './routes/kirchnerismoPage';
 
 const router = createBrowserRouter([
     {
@@ -21,7 +23,15 @@ const router = createBrowserRouter([
                     {
                         path: 'peronismo',
                         element: <Peronismo />,
-                    }
+                    },
+                    {
+                        path: 'menemismo',
+                        element: <Menemismo />,
+                    },
+                    {
+                        path: 'kirchnerismo',
+                        element: <Kirchnerismo />,
+                    },
                 ]
             }
         ]
