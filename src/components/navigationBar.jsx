@@ -49,35 +49,6 @@ export default function Navigation({ className = "" }) {
             <img src="/argentina.svg" alt="Logo de la Argentina" style={{height: 30, width: 30}} />
             Argentina Política
         </NavLink>
-        <InputGroup className="mx-5 d-none d-md-flex">
-            <Input name="search" id="search" placeholder="Buscar" />
-            <Button>
-                <img src={search} alt="Buscar" className="search" />
-            </Button>
-        </InputGroup>
-        <Button className="ms-auto me-3 d-md-none" onClick={toggleModal}>
-            <img src={search} alt="Buscar" className="search" />
-        </Button>
-
-        <Modal isOpen={modal} toggle={toggleModal}>
-            <div className="modal-header">
-                <InputGroup>
-                    <Input name="search" id="search" placeholder="Buscar" />
-                    <Button>
-                        <img src={search} alt="Buscar" className="search" />
-                    </Button>
-                </InputGroup>
-            </div>
-            <ModalBody>
-                {false && <i>Escribe para buscar</i>}
-                {true && <><CardModal /><CardModal /><CardModal /></>}
-            </ModalBody>
-            <ModalFooter>
-                <Button onClick={toggleModal}>
-                    Cancelar
-                </Button>
-            </ModalFooter>
-        </Modal>
 
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
         <Collapse isOpen={!collapsed} navbar>
