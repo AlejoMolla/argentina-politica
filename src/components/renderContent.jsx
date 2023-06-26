@@ -7,7 +7,6 @@ import {
 } from 'reactstrap';
 
 export default function RenderContent({ fileJson }) {
-    console.log(fileJson)
     const data = fileJson[0];
     return <>
         <div className="content pt-5 px-4 col-12 col-md-6 scrollable">
