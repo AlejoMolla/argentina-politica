@@ -10,6 +10,7 @@ import ErrorPage, { ErrorElement } from './routes/errorPage';
 import Peronismo from './routes/peronismoPage';
 import Menemismo from './routes/menemismoPage';
 import Kirchnerismo from './routes/kirchnerismoPage';
+import Index from './routes/indexPage';
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
             {
                 errorElement: <div className="content d-flex justify-content-center"><ErrorElement /></div>,
                 children: [
+                    {index: true, element: <Index />},
                     {
                         path: 'peronismo',
                         element: <Peronismo />,
