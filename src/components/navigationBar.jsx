@@ -1,20 +1,11 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import search from '../assets/icons/search.svg';
 import {
     Navbar,
     NavbarToggler,
     Nav,
     NavItem,
     Collapse,
-
-    InputGroup,
-    Input,
-    Button,
-
-    Modal,
-    ModalBody,
-    ModalFooter,
 
     Card,
     CardHeader,
