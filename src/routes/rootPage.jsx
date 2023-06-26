@@ -4,6 +4,10 @@ import { Outlet } from "react-router-dom"
 export default function Root() {
     return <div className="App">
         <Navigation className="navigation" />
-        <Outlet />
+        <div className="container-fluid contenedor">
+            <div className="row">
+                <Outlet />
+            </div>
+        </div>
     </div>
 }
