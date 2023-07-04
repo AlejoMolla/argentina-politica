@@ -6,36 +6,14 @@ import {
     Nav,
     NavItem,
     Collapse,
-
-    Card,
-    CardHeader,
-    CardBody,
-    CardTitle,
-    CardText,
 } from 'reactstrap';
-
-function CardModal() {
-    return <Card color="light" outline>
-        <CardHeader>
-            <b>Jhon Doe</b>
-        </CardHeader>
-        <CardBody>
-            <CardTitle tag="h6">Jhon Doe Message</CardTitle>
-            <CardText>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A accusamus eos odit.
-            </CardText>
-        </CardBody>
-    </Card>
-}
 
 export default function Navigation({ className = "" }) {
     const [collapsed, setCollapsed] = useState(true);
-    const [modal, setModal] = useState(false);
 
     const toggleNavbar = () => setCollapsed(!collapsed);
-    const toggleModal = () => setModal(!modal);
 
-    return <Navbar color="dark" dark className={`navbar-expand-md ${className}`}>
+    return <Navbar dark className={`bg-red navbar-expand-md ${className}`}>
         <NavLink className="navbar-brand" to="/">
             <img src="/argentina.svg" alt="Logo de la Argentina" style={{height: 30, width: 30}} />
             Argentina Política

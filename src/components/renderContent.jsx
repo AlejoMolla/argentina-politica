@@ -23,7 +23,7 @@ export default function RenderContent({ fileJson }) {
                 </Fragment>
             ))}
         </div>
-        <div className="aside col-8 col-sm-6 col-md-3 scrollable">
+        <div className="aside col-11 col-sm-10 col-md-3 scrollable">
             <Card>
                 <img src={"images/" + data.imagen_aside} alt={data.imagen_aside.replace('.jpg', '')} />
                 <CardBody>

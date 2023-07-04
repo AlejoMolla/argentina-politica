@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+:root {
+    --bg-red: #D90429;
+}
+
 * {
     font-family: 'Inter', sans-serif;
     line-height: 100%;
@@ -81,4 +85,14 @@
 
 .error-element i {
     color: #666;
+}
+
+.bg-red {
+    background-color: var(--bg-red);
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
