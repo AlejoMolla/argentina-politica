@@ -5,9 +5,7 @@ export default function Root() {
     return <div className="App">
         <Navigation className="navigation" />
         <div className="container-fluid contenedor">
-            <div className="row">
-                <Outlet />
-            </div>
+            <Outlet />
         </div>
     </div>
 }

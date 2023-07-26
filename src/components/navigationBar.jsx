@@ -35,10 +35,10 @@ export default function Navigation({ className = "" }) {
     const toggleNavbar = () => setCollapsed(!collapsed);
     const toggleModal = () => setModal(!modal);
 
-    return <Navbar color="dark" dark className={`navbar-expand-md ${className}`}>
+    return <Navbar dark className={`navbar-expand-md ${className} primary-bg fixed-top`}>
         <NavLink className="navbar-brand" to="/">
-            <img src="/argentina.svg" alt="Logo de la Argentina" style={{height: 30, width: 30}} />
-            Argentina Política
+            <img src="/images/logo.png" alt="Logo de la Argentina" style={{height: 30, width: 30}} />
+            <span className="ms-2">Argentina Política</span>
         </NavLink>
 
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
@@ -72,6 +72,16 @@ export default function Navigation({ className = "" }) {
                         }
                     >
                         Kirchnerismo
+                    </NavLink>
+                </NavItem>
+                <NavItem className="my-1 my-md-0">
+                    <NavLink
+                        to="/articulos"
+                        className={({isActive}) => 
+                            "nav-link" + (isActive ? " active" : "")
+                        }
+                    >
+                        Articulos
                     </NavLink>
                 </NavItem>
             </Nav>

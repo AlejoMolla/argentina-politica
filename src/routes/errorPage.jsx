@@ -14,7 +14,9 @@ export function ErrorElement() {
 }
 
 export default function ErrorPage() {
-    return <div className="error-page">
-        <ErrorElement />
+    return <div className="row row-header">
+        <div className="error-page">
+            <ErrorElement />
+        </div>
     </div>
 }

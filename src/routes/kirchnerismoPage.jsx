@@ -6,8 +6,8 @@ import Sidebar from "../components/sidebar";
 export default function Kirchnerismo() {
     const [kirchnerismo, setKirchnerismo] = useState(KIRCHNERISMO);
     const [index, setIndex] = useState(1);
-    return <>
+    return <div className="row row-header">
         <Sidebar sections={[kirchnerismo, index]} onClick={setIndex} />
         <RenderContent fileJson={kirchnerismo.filter(per => per.id === index)} />
-    </>
+    </div>
 }
