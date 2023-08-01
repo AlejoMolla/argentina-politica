@@ -5,9 +5,10 @@ import Sidebar from "../components/sidebar";
 
 export default function Peronismo() {
     const [peronismo, setPeronismo] = useState(PERONISMO);
-    const [index, setIndex] = useState(1);
-    return <div className="row row-header">
+    console.log(peronismo)
+    const [index, setIndex] = useState(0);
+    return <div className="row row-header justify-content-center">
         <Sidebar sections={[peronismo, index]} onClick={setIndex} />
-        <RenderContent fileJson={peronismo.filter(per => per.id === index)} />
+        <RenderContent fileJson={peronismo.filter(articulo => articulo.id === index)} />
     </div>
 }

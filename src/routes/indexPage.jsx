@@ -45,7 +45,7 @@ export default function Index() {
                     </div>
                     <div className="col-3 h-100 border-left d-451-none">
                         <div className="d-flex h-100 justify-content-start align-items-center">
-                            <img className="img-fluid logo-frase" src="images/logo.png" alt="Logo de la Página" />
+                            <img className="img-fluid logo-frase" src="images/Logos/logo.png" alt="Logo de la Página" />
                         </div>
                     </div>
                 </div>

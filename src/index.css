@@ -125,14 +125,14 @@ body {
 
 /* App */
 .App {
-    display: grid;
+    /* display: grid;
     grid-template-rows: min-content 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:
         "navigation"
         "container"
-    ;
-    height: 100vh;
+    ; */
+    height: calc(100vh - 56px);
 }
 .navigation {
     grid-area: navigation;

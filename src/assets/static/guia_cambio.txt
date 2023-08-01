@@ -1,0 +1,85 @@
+Estructura
+
+    id
+    titulo
+    aside: {
+        imagen,
+        titulo,
+        contenido
+        boton: {
+            isButton, children: [
+                {
+                    color,
+                    link,
+                    texto
+                }
+            ]
+        }
+    }
+    contenido: [
+        {
+            subtitulo,
+            texto: [string]
+        }
+    ],
+    boton: {
+        isButton,
+        children: [
+            {
+                color,
+                link,
+                texto
+            }
+        ]
+    }
+
+/* Ejemplo */
+const PERONISMO_NUEVO = [
+    {
+        "id": 0,
+        "titulo": "Título",
+        "aside": {
+            "imagen": {src, alt},
+            "titulo": "Aside",
+            "contenido": "Lorem ipsum sit amet.",
+            "boton": {
+                "isButton": true,
+                "children": [
+                    {
+                        "color": "primary",
+                        "link": "https://arg.ar",
+                        "texto": "Argentina"
+                    }
+                ]
+            }
+        },
+        "contenido": [
+            {
+                "subtitulo": "Subtítulo",
+                "texto": [
+                    "Lorem ipsum sit amet.",
+                    "Lorem ipsum sit amet.",
+                    "Lorem ipsum sit amet.",
+                ]
+            },
+            {
+                "subtitulo": "Subtítulo",
+                "texto": [
+                    "Lorem ipsum sit amet.",
+                    "Lorem ipsum sit amet.",
+                    "Lorem ipsum sit amet.",
+                ]
+            },
+        ],
+        "boton": {
+            "isButton": true,
+            "children": [
+                {
+                    "color": "danger",
+                    "link": "https://arg.ar",
+                    "texto": "Argentina"
+                }
+            ]
+        }
+    }
+]
