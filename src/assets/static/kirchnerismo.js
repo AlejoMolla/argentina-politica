@@ -3,7 +3,10 @@ export const KIRCHNERISMO = [
         "id": 0,
         "titulo": "La década ganada",
         "aside": {
-            "imagen": "images/Kirchnerismo/Kirchnerismo_LaDecadaGanada_NestorKirchner.jpg",
+            "imagen": {
+                "src": "images/Kirchnerismo/Kirchnerismo_LaDecadaGanada_NestorKirchner.jpg",
+                "alt": "Presidente Argentino Nestor Kirchner"
+            },
             "titulo": "Nestor Kirchner",
             "contenido": "Néstor Carlos Kirchner​ fue un abogado y político argentino, oriundo de Río Gallegos. Néstor empezó su carrera política como intendente de su ciudad natal y luego como gobernador de Santa Cruz, elegido la primera vez con el 61% de los votos, la segunda con el 66% y una tercera y última con el 54%. Tomó a la provincia de Santa Cruz destrozada y endeudada, sacándola adelante. Ya desde aquel momento empezaba a tener tensiones con Menem y luego con Duhalde ya en campaña pero que, sin embargo, luego lo terminaría ayudando a llegar a la presidencia, en parte porque no tenía otra opción.",
             "boton": {
@@ -42,9 +45,9 @@ export const KIRCHNERISMO = [
             "isButton": false,
             "children": [
                 {
-                    "color": "danger",
-                    "link": "https://arg.ar",
-                    "texto": "Argentina"
+                    "color": "" /*"danger"*/,
+                    "link": "" /*"https://arg.ar"*/,
+                    "texto": "" /*"Argentina"*/
                 }
             ]
         }
@@ -52,7 +55,10 @@ export const KIRCHNERISMO = [
         "id": 1,
         "titulo": "Los gobiernos de Cristina Fernandez de Kirchner",
         "aside": {
-            "imagen": "images/Kirchnerismo/Kirchnerismo_LosGobiernosDeCristinaFernandezDeKirchner_NoAlALCA.jpg",
+            "imagen": {
+                "src": "images/Kirchnerismo/Kirchnerismo_LosGobiernosDeCristinaFernandezDeKirchner_NoAlALCA.jpg",
+                "alt": "Imagen del ALCA"
+            },
             "titulo": "No al ALCA",
             "contenido": "En la 4ta cumbre de las Américas de Mar del Plata, ocurrió un hecho que iba a cambiar la historia reciente de latinoamérica, el famoso No al ALCA. En él, los grandes países de la región, en particular EEUU, intentaban asegurar la supremacía de sus productos en Latinoamérica, permitiendo que pudieran comprar y vender sin impuestos. Sin embargo, esta medida solo beneficia a los países más poderosos, destruyendo el mercado interno y el sector industrial de todas las economías regionales. Esto se estaba aplicando en la región desde 1994, sin embargo, con la nueva ola de mandatarios populistas y gracias a la unidad que tenían los países sudamericanos, en particular Kirchner con los presidentes Hugo Chavez de Venezuela y Lula Da Silva de Brasil, se puso una pausa a este sistema, lo que marcaba el principio del fin(al menos hasta aquel momento) del neoliberalismo en Latinoamérica, sistema que había terminado en crisis en casi todos los casos.",
             "boton": {
@@ -90,9 +96,9 @@ export const KIRCHNERISMO = [
             "isButton": false,
             "children": [
                 {
-                    "color": "danger",
-                    "link": "https://arg.ar",
-                    "texto": "Argentina"
+                    "color": "" /*"danger"*/,
+                    "link": "" /*"https://arg.ar"*/,
+                    "texto": "" /*"Argentina"*/
                 }
             ]
         }

@@ -30,27 +30,34 @@ export const PERONISMO = [
             {
                 "subtitulo": "Construcción de poder político de Perón",
                 "texto": [
-                    "En 1944, debido a las presiones de Estados Unidos sobre el asunto de la neutralidad en la Segunda Guerra Mundial, Ramirez pronuncia a Argentina a favor de las naciones Aliadas.",
+                    "En 1944, debido a las presiones de Estados Unidos sobre el asunto de la neutralidad en la Segunda Guerra Mundial, Ramirez pronuncia a Argentina a favor de las naciones Aliadas.¹",
                     "Esto no cayó bien dentro de la GOU, que tenia una politica nacionalista y uno de sus cometidos era mantenerse neutral en la guerra. Esto provocó que Ramirez sea destituido de su cargo y reemplazado por Farrel. En ese momento Perón asume como vicepresidente. Desde la secretaría de trabajo y previsión impulsó políticas a favor de los trabajadores, que en ese momento sufrían de condiciones inhumanas de trabajo. Peron promovió medidas como las vacaciones pagas, el aguinaldo, la jubilación e indemnización, además de firmar numerosos convenios colectivos y el estatuto de peón, que defiende los derechos del trabajador rural, que hasta ese momento no estaba legislado. Esta serie de medidas provocó una aceptación popular muy grande alrededor de la figura de Perón.",
                 ]
             },
             {
                 "subtitulo": "17 de octubre de 1945",
                 "texto": [
-                    "Mas alla de la aceptacion popular, peron tenia varios enemigos que lo tachaban tanto de nazi por su neutralidad ante la guerra e incluso de comunista por su acercamiento a los obreros. Uno de sus enemigos era Eduardo Avalos, un general del radicalismo cordobés que quería ser presidente electo.",
+                    "Mas alla de la aceptacion popular, peron tenia varios enemigos que lo tachaban tanto de nazi por su neutralidad ante la guerra e incluso de comunista por su acercamiento a los obreros. Uno de sus enemigos era Eduardo Avalos, un general del radicalismo cordobés que quería ser presidente electo.²",
                     "Este se reunió con Farrel para pedirle a Peron que renuncie a sus cargos, debido a que el poder que empezaba a tener podría resultar en una amenaza. Perón acepta sorpresivamente y emite por cadena nacional un discurso de despedida. Este discurso molesto a Avalos, que lo mandó a la cárcel de la isla Martin Garcia. ",
                     "El 17 de octubre de 1945 miles de trabajadores se movilizaron hacia plaza de mayo para pedir la liberación de Perón. Perón en ese momento estaba en el hospital militar de Belgrano(había llegado allí con un diagnóstico médico falsificado).",
                     "En ese momento Avalos tuvo que ir a pedirle a Perón que calme a la gente para que despejen la plaza de mayo. Perón aceptó con una condición, primero quería hablar con Farrel. A él le dijo que exigía el llamado a elecciones y el apoyo a su candidatura. Pasadas las 11 de la noche Perón salió al balcón a dar un discurso, anunciando implícitamente su candidatura y consagrándose como el líder de los trabajadores.",
                 ]
             },
+            {
+                "subtitulo": "Referencias",
+                "texto": [
+                    "¹Así se denominaba al bando de la SGM liderado por Gran Bretaña, EEUU y la URSS",
+                    "²Uno de los objetivos del GOU era acabar con la década infame, esto significaba establecer un gobierno democrático."
+                ]
+            }
         ],
         "boton": {
             "isButton": false,
             "children": [
                 {
-                    "color": "danger",
-                    "link": "https://arg.ar",
-                    "texto": "Argentina"
+                    "color": "" /*"danger"*/,
+                    "link": "" /*"https://arg.ar"*/,
+                    "texto": "" /*"Argentina"*/
                 }
             ]
         }
@@ -72,11 +79,6 @@ export const PERONISMO = [
                         "link": "https://backend.educ.ar/refactor_resource/get-attachment/24390",
                         "texto": "Carta"
                     },
-                    {
-                        "color": "primary",
-                        "link": "https://www.youtube.com/watch?v=OFX47QLcOZE&t=283s&ab_channel=pajodato",
-                        "texto": "Perón habla de Economía"
-                    },
                 ]
             }
         },
@@ -90,7 +92,7 @@ export const PERONISMO = [
             {
                 "subtitulo": "El plan quinquenal",
                 "texto": [
-                    "El plan quinquenal(concepto basado en la URSS) era el programa económico del gobierno de Perón. Este tenía como finalidad cambiar el modelo de producción, pasando de uno concentrado en la exportación a una economía que tenga como base la industria. Para esto era vital promover el mercado interno, haciendo que los sectores populares consumieran los productos fabricados por la industria. Para lograr esto era crucial el IAPI. El IAPI era un organismo que se encargaba de traspasar parte de las enormes ganancias de la exportación agrícola al sector industrial. El plan quinquenal y la situación global de posguerra1 permitieron que se nacionalizaran muchos de los servicios que antes eran propiedad extranjera, además de numerosas obras públicas. Esto permite que los sectores públicos aumenten el consumo, los sindicatos recibían miles de nuevos afiliados y construían sus propios hoteles vacacionales, mientras la popularidad de Peron crecía.",
+                    "El plan quinquenal(concepto basado en la URSS) era el programa económico del gobierno de Perón. Este tenía como finalidad cambiar el modelo de producción, pasando de uno concentrado en la exportación a una economía que tenga como base la industria. Para esto era vital promover el mercado interno, haciendo que los sectores populares consumieran los productos fabricados por la industria. Para lograr esto era crucial el IAPI. El IAPI era un organismo que se encargaba de traspasar parte de las enormes ganancias de la exportación agrícola al sector industrial. El plan quinquenal y la situación global de posguerra¹ permitieron que se nacionalizaran muchos de los servicios que antes eran propiedad extranjera, además de numerosas obras públicas. Esto permite que los sectores públicos aumenten el consumo, los sindicatos recibían miles de nuevos afiliados y construían sus propios hoteles vacacionales, mientras la popularidad de Peron crecía.",
                 ]
             },
             {
@@ -105,14 +107,20 @@ export const PERONISMO = [
                     "Las medidas tomadas hasta el momento venían brindando prosperidad a la Argentina. Sin embargo en 1949, la situación empezaba a cambiar. La economía empezaba a estancarse, la inflación subía y las divisas extranjeras entraban en menor cantidad. La responsable de esta situación fue en parte el plan Marshall, en el cual Estados Unidos compraba alimentos y los “donaba” a sus aliados europeos, con el objetivo de evitar el avance del comunismo en Europa occidental. Esto provocó que los precios de los productos agrícolas cayeran en picada. Además de un deliberado boicot a los productos argentinos que empezaban a competir con los extranjeros. A todo esto se le suman 2 años de sequía y un fenómeno inflacionario particular, la demanda era mayor que la oferta y la decisión del empresariado fue aumentar de forma abrupta los precios para bajarla, en vez de producir más para saciarla.",
                 ]
             },
+            {
+                "subtitulo": "Referencias",
+                "texto": [
+                    ""
+                ]
+            }
         ],
         "boton": {
-            "isButton": false,
+            "isButton": true,
             "children": [
                 {
-                    "color": "danger",
-                    "link": "https://arg.ar",
-                    "texto": "Argentina"
+                    "color": "link",
+                    "link": "https://www.youtube.com/watch?v=OFX47QLcOZE&t=283s&ab_channel=pajodato",
+                    "texto": "¹Perón explica las negociaciones de la posguerra"
                 }
             ]
         }
@@ -162,9 +170,9 @@ export const PERONISMO = [
             "isButton": false,
             "children": [
                 {
-                    "color": "danger",
-                    "link": "https://arg.ar",
-                    "texto": "Argentina"
+                    "color": "" /*"danger"*/,
+                    "link": "" /*"https://arg.ar"*/,
+                    "texto": "" /*"Argentina"*/
                 }
             ]
         }
@@ -181,11 +189,6 @@ export const PERONISMO = [
             "boton": {
                 "isButton": true,
                 "children": [
-                    {
-                        "color": "link",
-                        "link": "https://www.youtube.com/watch?v=QAakF5jX4do&ab_channel=marc3168",
-                        "texto": "Bombardeo a la Plaza de Mayo"
-                    },
                     {
                         "color": "link",
                         "link": "https://es.wikipedia.org/wiki/Veinte_Verdades_Peronistas",
@@ -216,19 +219,25 @@ export const PERONISMO = [
             {
                 "subtitulo": "Crisis política del peronismo",
                 "texto": [
-                    "Los principales medios de la oposición acusan de corrupción a varios miembros del gobierno peronista. La CGT convocó a una movilización a plaza de mayo. Allí detonó una bomba plantada por los comandos civiles de la oposición, provocando la muerte de 7 personas y varios heridos. Esa misma noche grupos de militantes peronistas destruyeron los principales locales de la oposición como represalia. El 16 de junio de 1955 bombarderos atacaron la casa rosada con el objetivo de matar a Perón.",
+                    "Los principales medios de la oposición acusan de corrupción a varios miembros del gobierno peronista. La CGT convocó a una movilización a plaza de mayo. Allí detonó una bomba plantada por los comandos civiles de la oposición, provocando la muerte de 7 personas y varios heridos. Esa misma noche grupos de militantes peronistas destruyeron los principales locales de la oposición como represalia. El 16 de junio de 1955 bombarderos atacaron la casa rosada con el objetivo de matar a Perón.¹",
                     "Ante las amenazas de sublevaciones, se trasladó al ministerio de guerra, donde formó la resistencia junto con los oficiales leales. Sumado a esto, al enterarse del ataque, diversos grupos de obreros salieron a luchar por Peron, él intentó evitarlo, debido a que no quería más víctimas, sin embargo sus intentos fueron inútiles. Para las 4 de la tarde los aviones tiraron sus últimas bombas escapando a Montevideo, dejando a 300 civiles inocentes fallecidos y el doble de heridos, capitalizando la primera vez en la historia mundial que un ejército bombardea a sus propios ciudadanos. Luego del bombardeo el presidente intenta llevar paz, pero es un vano, el 16 de septiembre el general Lombardi inicia un levantamiento a gran escala entre los oficiales leales y las fuerzas armadas. Ante esta situación Perón decide renunciar a su presidencia, exiliarse en primer lugar en Paraguay.",
                 ]
             },
+            {
+                "subtitulo": "Referencias",
+                "texto": [
+                    ""
+                ]
+            }
         ],
         "boton": {
-            "isButton": false,
+            "isButton": true,
             "children": [
                 {
-                    "color": "danger",
-                    "link": "https://arg.ar",
-                    "texto": "Argentina"
-                }
+                    "color": "link",
+                    "link": "https://www.youtube.com/watch?v=QAakF5jX4do&ab_channel=marc3168",
+                    "texto": "¹Bombardeo a la Plaza de Mayo"
+                },
             ]
         }
     }, {
@@ -256,7 +265,7 @@ export const PERONISMO = [
             {
                 "subtitulo": "Revolución Libertadora",
                 "texto": [
-                    "Si bien habían ciertos sectores del gobierno de facto que preferían dejar las conquistas sociales como estaban y solo eliminar la figura de Perón, lo cierto es que el lado liberal, que quería arrancar al peronismo de raíz se terminó imponiendo. Con Aramburu, el Peronismo fue perseguido en todo el país. La imagen de los funcionarios peronistas quedaba prohibida, como también los símbolos y el partido justicialista se disolvió. También intervino en la CGT. Los medios de comunicación de la época (que estaban a favor del gobierno de facto) no podían nombrarlo si no era con eufemismos. La reforma del 49 quedó derogada. Muchos empresarios aprovechaban para no cumplir con los convenios colectivos de trabajo, aprovechando para despedir a trabajadores. La respuesta del pueblo fue rápida, llevando a cabo acciones de protesta. Tras un intento de sublevación llevado a cabo por algunos generales fieles a Perón, Aramburu decretó la ley marcial, los generales fueron fusilados y algunos militantes y obreros fueron torturados y baleados. Algunos militantes sobrevivieron y contaron esta historia a Rodolfo Walsh, quien luego narró esta historia en el libro Operación Masacre.",
+                    "Si bien habían ciertos sectores del gobierno de facto que preferían dejar las conquistas sociales como estaban y solo eliminar la figura de Perón, lo cierto es que el lado liberal, que quería arrancar al peronismo de raíz se terminó imponiendo. Con Aramburu, el Peronismo fue perseguido en todo el país. La imagen de los funcionarios peronistas quedaba prohibida, como también los símbolos y el partido justicialista se disolvió. También intervino en la CGT. Los medios de comunicación de la época (que estaban a favor del gobierno de facto) no podían nombrarlo si no era con eufemismos. La reforma del 49 quedó derogada. Muchos empresarios aprovechaban para no cumplir con los convenios colectivos de trabajo, aprovechando para despedir a trabajadores. La respuesta del pueblo fue rápida, llevando a cabo acciones de protesta. Tras un intento de sublevación llevado a cabo por algunos generales fieles a Perón, Aramburu decretó la ley marcial, los generales fueron fusilados y algunos militantes y obreros fueron torturados y baleados.¹",
                 ]
             },
             {
@@ -272,14 +281,20 @@ export const PERONISMO = [
                     "Con la proscripción del Peronismo,en las elecciones del 1963 nuevamente hubo una cantidad de votos en blanco masiva. El ganador de las elecciones con solo el 25% fue Arturo Illia.  En las elecciones del Congreso del 65, luego de un fracaso en el intento de Peron de volver al país, el peronismo pudo presentar una lista, formada por líderes sindicales(Vandor el más importante de ellos) y por caudillos provinciales. Illia permitió esto con el objetivo de crear interna dentro del peronismo y que pierdan poder. La unión popular ganó con el 36% de los votos. Sin embargo, Perón no se quedó con los brazos cruzados y envió a su tercera esposa a la Argentina a reunir a los opositores a Vandor para quitarle el mando de la CGT. En las elecciones en la provincia de Mendoza, el candidato impulsado por Isabel de Perón ganó por amplia diferencia sobre el de Vandor. Por lo que este entendió que debía dar un paso al costado en su búsqueda de “Peronismo sin Perón” y se encargó de intentar unificar las 62 organizaciones de la CGT.",
                 ]
             },
+            {
+                "subtitulo": "Referencias",
+                "texto": [
+                    "¹Algunos militantes sobrevivieron y contaron esta historia a Rodolfo Walsh, quien luego narró esta historia en el libro Operación Masacre."
+                ]
+            }
         ],
         "boton": {
             "isButton": false,
             "children": [
                 {
-                    "color": "danger",
-                    "link": "https://arg.ar",
-                    "texto": "Argentina"
+                    "color": "" /*"danger"*/,
+                    "link": "" /*"https://arg.ar"*/,
+                    "texto": "" /*"Argentina"*/
                 }
             ]
         }
@@ -331,9 +346,9 @@ export const PERONISMO = [
             "isButton": false,
             "children": [
                 {
-                    "color": "danger",
-                    "link": "https://arg.ar",
-                    "texto": "Argentina"
+                    "color": "" /*"danger"*/,
+                    "link": "" /*"https://arg.ar"*/,
+                    "texto": "" /*"Argentina"*/
                 }
             ]
         }

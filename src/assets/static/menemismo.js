@@ -3,7 +3,10 @@ export const MENEMISMO = [
         "id": 0,
         "titulo": "La vuelta de la democracia",
         "aside": {
-            "imagen": "images/Menemismo/Menemismo_LaVueltaDeLaDemocracia_HebeMariaPastorDeBonafini.jpg",
+            "imagen": {
+                "src": "images/Menemismo/Menemismo_LaVueltaDeLaDemocracia_HebeMariaPastorDeBonafini.jpg",
+                "alt": "Hebe María Pastor de Bonafini"
+            },
             "titulo": "Hebe María Pastor de Bonafini",
             "contenido": "Hebe María Pastor de Bonafini (Ensenada, 4 de diciembre de 1928-La Plata, 20 de noviembre de 2022), más conocida como Hebe de Bonafini, fue una activista argentina, cofundadora de la asociación Madres de Plaza de Mayo, que es una organización de madres y abuelas que habían perdido a sus hijos o nietos durante la dictadura y se encargan de organizar varias protestas por los derechos humanos y que tenían gran capacidad para movilizar a las masas en la época. Falleció el 20 de noviembre de 2022.",
             "boton": {
@@ -47,9 +50,9 @@ export const MENEMISMO = [
             "isButton": false,
             "children": [
                 {
-                    "color": "danger",
-                    "link": "https://arg.ar",
-                    "texto": "Argentina"
+                    "color": "" /*"danger"*/,
+                    "link": "" /*"https://arg.ar"*/,
+                    "texto": "" /*"Argentina"*/
                 }
             ]
         }
@@ -57,7 +60,10 @@ export const MENEMISMO = [
         "id": 1,
         "titulo": "El primer gobierno de Menem",
         "aside": {
-            "imagen": "images/Menemismo/Menemismo_ElPrimerGobiernoDeMenem_AtentadoALaAMIA",
+            "imagen": {
+                "src": "images/Menemismo/Menemismo_ElPrimerGobiernoDeMenem_AtentadoALaAMIA.jpg",
+                "alt": "Atentado a la AMIA"
+            },
             "titulo": "Atentado a la AMIA",
             "contenido": "El atentado a la AMIA fue un ataque terrorista con coche bomba​ que sufrió la Asociación Mutual Israelita Argentina en la Ciudad Autónoma de Buenos Aires el lunes 18 de julio de 1994. Dos años antes, en un atentado similar, fue volada la embajada de Israel en Argentina causando la muerte de 22 personas.",
             "boton": {
@@ -98,9 +104,9 @@ export const MENEMISMO = [
             "isButton": false,
             "children": [
                 {
-                    "color": "danger",
-                    "link": "https://arg.ar",
-                    "texto": "Argentina"
+                    "color": "" /*"danger"*/,
+                    "link": "" /*"https://arg.ar"*/,
+                    "texto": "" /*"Argentina"*/
                 }
             ]
         }
@@ -108,7 +114,10 @@ export const MENEMISMO = [
         "id": 2,
         "titulo": "El segundo gobierno de Menem",
         "aside": {
-            "imagen": "images/Menemismo/Menemismo_ElSegundoGobiernoDeMenem_PactoDeOlivos.jpg",
+            "imagen": {
+                "src": "images/Menemismo/Menemismo_ElSegundoGobiernoDeMenem_PactoDeOlivos.jpg",
+                "alt": "Pacto de Olivos"
+            },
             "titulo": "Pacto de Olivos",
             "contenido": "En las elecciones del 94 el peronismo obtuvo cerca del 38 % de los votos y 134 convencionales, frente al 20 % y 71 convencionales del radicalismo, mostrando fuga de votos de ambos partidos, aunque más acentuada en el caso del segundo. Aparecieron como considerables fuerzas nuevas el centro-izquierdista Frente Grande con 31 convencionales y el derechista MODIN con 21 convencionales.",
             "boton": {
@@ -148,9 +157,9 @@ export const MENEMISMO = [
             "isButton": false,
             "children": [
                 {
-                    "color": "danger",
-                    "link": "https://arg.ar",
-                    "texto": "Argentina"
+                    "color": "" /*"danger"*/,
+                    "link": "" /*"https://arg.ar"*/,
+                    "texto": "" /*"Argentina"*/
                 }
             ]
         }

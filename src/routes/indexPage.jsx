@@ -3,10 +3,10 @@ import Carousel from "../components/carousel";
 import { ARTICULOS } from "../assets/static/index/articulos";
 import { FRASES } from "../assets/static/index/frases";
 
-export function RenderCard({src, alt, link}) {
+export function RenderCard({src, alt, link, def = true}) {
     return <Link to={link} className="h-100">
-        <div className="card mb-2 rounded-3 h-100">
-            <img src={src} alt={alt} className="card-img h-100 object-fit-cover object-position-right" />
+        <div className={`card mb-2 rounded-3 ${def ? 'card-img' : ''}`}>
+            <img src={src} alt={alt}/>
         </div>
     </Link>
 }

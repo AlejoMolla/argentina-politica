@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap'
 import './index.css';
 
 // Routes
-import Root from './routes/rootPage';
+import Root, { loader as rootLoader } from './routes/rootPage';
 import ErrorPage, { ErrorElement } from './routes/errorPage';
 import Peronismo from './routes/peronismoPage';
 import Menemismo from './routes/menemismoPage';
@@ -22,6 +22,7 @@ const router = createHashRouter([
     {
         path: '/*',
         element: <Root />,
+        loader: rootLoader,
         errorElement: <ErrorPage />,
         children: [
             {

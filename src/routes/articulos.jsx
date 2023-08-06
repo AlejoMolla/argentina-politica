@@ -9,7 +9,7 @@ export function IndexArticulos() {
        <div className="col-12 col-md-8 mt-5">
             <h2>Artículos Disponibles</h2>
             {articulos.map(({src, alt, id, link}) => (
-                    <RenderCard src={src} alt={alt} key={id} link={link} />
+                    <RenderCard src={src} alt={alt} key={id} link={link} def={false} />
                 ))}
         </div> 
     </div>
