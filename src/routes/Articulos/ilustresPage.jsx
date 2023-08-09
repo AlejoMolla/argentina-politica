@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react"
-import { ILUSTRES } from "../assets/static/articulos/ilustres"
+import { ILUSTRES } from "../../assets/static/articulos/ilustres"
 
 export default function Ilustres() {
     const [ilustres, setIlustres] = useState(ILUSTRES);

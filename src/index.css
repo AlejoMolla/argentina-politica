@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+/* Estilos Generales */
 * {
     font-family: 'Inter', sans-serif;
     line-height: 100%;
@@ -9,19 +10,11 @@ body {
     margin-top: 56px;
 }
 
-.primary-bg {
-    background-color: #003486;
-}
+/* {{{{ Index Page */
 
-.frase-bg {
-    background-color: #030318;
-}
 
-#prueba {
-    overflow-y: auto;
-}
-
-#svg-prueba {
+/* Crea el logo de las comillas que está a la izquierda de la frase */
+#frase-svg {
     display: flex;
     height: 100px;
     flex-basis: 100px;
@@ -34,7 +27,7 @@ body {
     padding: 0 7px;
 }
 
-#svg-prueba span {
+#frase-svg span {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -43,7 +36,7 @@ body {
     position: relative;
 }
 
-#svg-prueba span::before {
+#frase-svg span::before {
     content: '';
     position: absolute;
     bottom: 0px;
@@ -55,21 +48,150 @@ body {
     transform: rotate(100deg);
 }
 
+/* Modifica el tamaño para que se ajuste sin problemas a pantallas más pequeñas */
 @media screen and (max-width: 649px) {
-    #svg-prueba {
+    #frase-svg {
         height: 80px;
         flex-basis: 80px;
     }
-    #svg-prueba span {
+    #frase-svg span {
         width: 25px;
         height: 25px;
 
     }
-    #svg-prueba span::before {
+    #frase-svg span::before {
         width: 34px;
         height: 34px;
     }
 }
+
+/* Define el max-width del logo ubicado a la derecha de las frases */
+.logo-frase {
+    max-width: 150px;
+}
+
+/* Ajusta el tamaño para que siga mostrandose en pantallas más pequeñas */
+@media screen and (max-width: 670px) {
+    .logo-frase {
+        max-width: 100px;
+    }
+}
+
+/* Hace desaparecer la columna que tiene el logo para ahorrar espacio en la pantalla */
+@media screen and (max-width: 468px) {
+    .d-logo-none {
+        display: none;
+    }
+}
+
+/* }}}} */
+
+
+/* {{{{ Configuración de contenedores */
+
+/* Se establece un margen para que la Navbar no se superponga al contenido */
+.contenedor {
+    margin-top: 56px;
+}
+
+/* La clase row-header se usa para que las filas ocupen el 100vh y que no sobrepasen */
+/* Estas se ven más en PeronismoPage, KirchnerismoPage o MenemismoPage */
+.contenedor .row-header {
+    height: calc(100vh - 56px);
+}
+
+/* Ajustamos para que en pantallas pequeñas pase a ocupar lo necesario */
+@media screen and (max-width: 768px) {
+    .contenedor .row {
+        height: auto;
+    }
+}
+
+/* }}}} */
+
+/* {{{{ Sidebar */
+
+.sidebar .active {
+    color: #0a58ca;
+}
+
+/* }}}} */
+
+/* {{{{ RenderContent Component */
+
+.content h2 {
+    font-weight: bolder;
+}
+
+.aside {
+    padding: 10px;
+}
+
+.aside img {
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* }}}} */
+
+/* {{{{ Error Page */
+
+.error-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-element h1 {
+    font-weight: bolder;
+}
+
+.error-element i {
+    color: #666;
+}
+
+/* }}}} */
+
+/* {{{{ RenderCard Component */
+.card-img {
+    height: 100% !important;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* }}}} */
+
+/* Utilidades */
+
+.primary-bg {
+    background-color: #003486;
+}
+
+.frase-bg {
+    background-color: #030318;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
 
 .object-fit-cover {
     object-fit: cover;
@@ -107,107 +229,9 @@ body {
     border-left: 1px solid #bbb;
 }
 
-.logo-frase {
-    max-width: 150px;
-}
-
-@media screen and (max-width: 649px) {
-    .logo-frase {
-        max-width: 100px;
-    }
-}
-
-@media screen and (max-width: 451px) {
-    .d-451-none {
-        display: none;
-    }
-}
-
-/* App */
-.App {
-    /* display: grid;
-    grid-template-rows: min-content 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "navigation"
-        "container"
-    ; */
-    height: calc(100vh - 56px);
-}
-.navigation {
-    grid-area: navigation;
-}
-
-.contenedor {
-    grid-area: container;
-}
-
-.contenedor .row-header {
-    height: calc(100vh - 56px);
-}
-
-@media screen and (max-width: 768px) {
-    .contenedor .row {
-        height: auto;
-    }
-}
-
-.sidebar .active {
-    color: #0a58ca;
-}
-
 .scrollable {
     height: 100%;
     overflow-y: auto;
 }
 
-.content h2 {
-    font-weight: bolder;
-}
-
-.aside {
-    padding: 10px;
-}
-
-.aside img {
-    max-height: 350px;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-}
-
-/* Error Page */
-.error-page {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.error-element {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.error-element h1 {
-    font-weight: bolder;
-}
-
-.error-element i {
-    color: #666;
-}
-
-.card-img {
-    height: 100% !important;
-}
-
-.card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: right;
-}
+/* }}} */

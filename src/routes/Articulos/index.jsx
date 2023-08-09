@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom"
-import { ARTICULOS } from "../assets/static/index/articulos"
-import { RenderCard } from "./indexPage";
+import { ARTICULOS } from "../../assets/static/index/articulos"
+import { RenderCard } from "../indexPage";
 
 export function IndexArticulos() {
     const [articulos, setArticulos] = useState(ARTICULOS);

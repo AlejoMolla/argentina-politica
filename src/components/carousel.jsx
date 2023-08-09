@@ -1,10 +1,27 @@
 import { ITEMS } from "../assets/static/index/carouselData"
 
+// Componente de Carousel Item
 function CarouselItem({url, alt, id}) {
     let isActive = id == 0 ? 'active' : ''
     return <div className={"carousel-item h-100 " + isActive}>
         <img src={url} alt={alt} className="d-block w-100 h-100 object-fit-cover" />
     </div>
+}
+
+// Botones Prev y Next del Carousel
+function CarouselButtons({ id }) {
+    return <>
+
+        <button className="carousel-control-prev" type="button" data-bs-target={id} data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target={id} data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+        </button>
+
+    </>
 }
 
 export default function Carousel() {
@@ -15,13 +32,6 @@ export default function Carousel() {
             ))}
         </div>
 
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselIndex" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselIndex" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-        </button>
+        <CarouselButtons id="#carouselIndex" />
     </div>
 }
