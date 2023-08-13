@@ -8,7 +8,7 @@ export default function Fuentes() {
 
     return <div className="row mt-4">
         <div className="col-12">
-            <h2>Fuentes</h2>
+            <h2 className="mt-4">Fuentes</h2>
             { // Renderiza las fuentes
                 fuentes.map(fuente => (
                     <Fragment key={fuente.id}>

@@ -40,7 +40,7 @@ function NavbarBrand() {
     return <>
     
         <NavLink className="navbar-brand" to="/">
-            <img src="/images/Logos/logo.png" alt="Logo de la Argentina" style={{height: 30, width: 30}} />
+            <img src="images/Logos/logo.png" alt="Logo de la Argentina" style={{height: 30, width: 30}} />
             <span className="ms-2">Argentina Política</span>
         </NavLink>
     
