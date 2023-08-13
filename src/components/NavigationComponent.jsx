@@ -52,13 +52,14 @@ export default function Navigation({ className = "" }) {
     // Controlar el colapso de la barra de navegación
     const [collapsed, setCollapsed] = useState(true);
     const toggleNavbar = () => setCollapsed(!collapsed);
+    const closeNavbar = () => setCollapsed(true);
 
     return <Navbar dark className={`navbar-expand-md ${className} primary-bg fixed-top`}>
         <NavbarBrand />
 
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
         <Collapse isOpen={!collapsed} navbar>
-            <Nav onItemClick={toggleNavbar} />
+            <Nav onItemClick={closeNavbar} />
         </Collapse>
     </Navbar>
 }
