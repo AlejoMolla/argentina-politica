@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { PERONISMO } from "../../assets/static/peronismo";
-import RenderContent from "../../components/renderContent";
-import Sidebar from "../../components/sidebar";
+import RenderContent from "../../components/RenderContentComponent";
+import Sidebar from "../../components/SidebarComponent";
 
 export default function Peronismo() {
     const [peronismo, setPeronismo] = useState(PERONISMO);
@@ -9,6 +9,6 @@ export default function Peronismo() {
     const [index, setIndex] = useState(0);
     return <div className="row row-header justify-content-center">
         <Sidebar sections={[peronismo, index]} onClick={setIndex} />
-        <RenderContent fileJson={peronismo.filter(articulo => articulo.id === index)} />
+        <RenderContent data={peronismo.filter(articulo => articulo.id === index)} />
     </div>
 }

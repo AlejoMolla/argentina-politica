@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Carousel from "../components/carousel";
+import Carousel from "../components/CarouselComponent";
 import { ARTICULOS } from "../assets/static/index/articulos";
 import { FRASES } from "../assets/static/index/frases";
 

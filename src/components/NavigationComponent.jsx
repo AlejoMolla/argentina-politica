@@ -7,6 +7,8 @@ import {
     NavItem,
     Collapse,
 } from 'reactstrap';
+
+// Items de la Nav
 import { ITEMS_NAV } from '../assets/static/configs/navConfigs';
 
 // Componente Nav
@@ -14,23 +16,26 @@ function Nav() {
     return <>
     
         <NavStrap navbar className="ms-auto">
-            {ITEMS_NAV.map(({id, texto, link}) => (
-                <NavItem className="my-1 my-md-0" key={id}>
-                    <NavLink
-                        to={link}
-                        className={({isActive}) => 
-                            "nav-link" + (isActive ? " active" : "")
-                        }
-                    >
-                        {texto}
-                    </NavLink>
-                </NavItem>
-            ))}
+            { // Genera los items de la Nav
+                ITEMS_NAV.map(({id, texto, link}) => (
+                    <NavItem className="my-1 my-md-0" key={id}>
+                        <NavLink
+                            to={link}
+                            className={({isActive}) => 
+                                "nav-link" + (isActive ? " active" : "")
+                            }
+                        >
+                            {texto}
+                        </NavLink>
+                    </NavItem>
+                ))
+            }
         </NavStrap>
     
     </>
 }
 
+// Componente Brand
 function NavbarBrand() {
     return <>
     
@@ -43,6 +48,7 @@ function NavbarBrand() {
 }
 
 export default function Navigation({ className = "" }) {
+    // Controlar el colapso de la barra de navegación
     const [collapsed, setCollapsed] = useState(true);
     const toggleNavbar = () => setCollapsed(!collapsed);
 
