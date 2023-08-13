@@ -25,8 +25,8 @@ export default function Footer() {
                             <h5>Estudiantes</h5>
                                 <div className="ps-4">
                                     {
-                                        data.estudiantes.map(student => (
-                                            <p>{student}</p>
+                                        data.estudiantes.map((student, index) => (
+                                            <p key={index}>{student}</p>
                                         ))
                                     }
                                 </div>
