@@ -12,7 +12,7 @@ import {
 import { ITEMS_NAV } from '../assets/static/configs/navConfigs';
 
 // Componente Nav
-function Nav() {
+function Nav({ onItemClick }) {
     return <>
     
         <NavStrap navbar className="ms-auto">
@@ -24,6 +24,7 @@ function Nav() {
                             className={({isActive}) => 
                                 "nav-link" + (isActive ? " active" : "")
                             }
+                            onClick={onItemClick}
                         >
                             {texto}
                         </NavLink>
@@ -57,7 +58,7 @@ export default function Navigation({ className = "" }) {
 
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
         <Collapse isOpen={!collapsed} navbar>
-            <Nav />
+            <Nav onItemClick={toggleNavbar} />
         </Collapse>
     </Navbar>
 }
