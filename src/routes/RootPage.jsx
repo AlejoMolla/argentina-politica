@@ -1,6 +1,7 @@
 import Navigation from "../components/NavigationComponent"
 import { Outlet } from "react-router-dom"
 
+// Devuelve el scroll a 0 en '/'
 export async function loader() {
     window.scrollTo(0, 0);
 

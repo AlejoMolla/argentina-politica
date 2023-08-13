@@ -19,4 +19,4 @@ export const ITEMS_NAV = [
         "texto": "Artículos",
         "link": "/articulos"
     },
-]
+];

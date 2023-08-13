@@ -24,4 +24,4 @@ export const ITEMS = [
         "url": '/images/Carousel/menem_con_bush.jpg',
         "alt": 'Carlos Menem con Bush'
     },
-]
+];

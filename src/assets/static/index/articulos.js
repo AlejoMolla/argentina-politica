@@ -17,4 +17,4 @@ export const ARTICULOS = [
         "alt": 'Foto de Jose de San Martín',
         "link": '/articulos/san_martin'
     },
-]
+];

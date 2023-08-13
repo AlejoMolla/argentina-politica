@@ -69,4 +69,4 @@ export const FUENTES = [
         "text": 'El historiador, Movimiento Peronista (Consejo Superior) - Las 20 verdades peronistas',
         "link": 'https://www.elhistoriador.com.ar/movimiento-peronista-consejo-superior-las-20-verdades-peronistas/'
     },
-]
+];

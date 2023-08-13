@@ -7,26 +7,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap'
 
 // Routes
-import RootPage, { loader as rootLoader } from './routes/rootPage';
-import ErrorPage, { ErrorElement } from './routes/errorPage';
-import IndexPage from './routes/indexPage';
-import FuentesPage from './routes/fuentes';
+import RootPage, { loader as rootLoader } from './routes/RootPage';
+import ErrorPage, { ErrorElement } from './routes/ErrorPage';
+import IndexPage from './routes/IndexPage';
+import FuentesPage from './routes/FuentesPage';
+
 // - Páginas Principales
-import PeronismoPage from './routes/Principales/peronismoPage';
-import MenemismoPage from './routes/Principales/menemismoPage';
-import KirchnerismoPage from './routes/Principales/kirchnerismoPage';
+import PeronismoPage from './routes/Principales/PeronismoPage';
+import MenemismoPage from './routes/Principales/MenemismoPage';
+import KirchnerismoPage from './routes/Principales/KirchnerismoPage';
+
 // - Articulos
-import ArticulosPage, { IndexArticulos } from './routes/Articulos';
-import IlustresPage from './routes/Articulos/ilustresPage';
-import SanMartinPage from './routes/Articulos/sanMartinPage';
+import ArticulosPage, { IndexArticulos } from './routes/Articulos/Index';
+import IlustresPage from './routes/Articulos/IlustresPage';
+import SanMartinPage from './routes/Articulos/SanMartinPage';
 import MusicaEnArgentinaPage from './routes/Articulos/MusicaEnArgentinaPage';
 
 const router = createHashRouter([
     {
         path: '/*',
         element: <RootPage />,
-        loader: rootLoader,
         errorElement: <ErrorPage />,
+        loader: rootLoader,
         children: [
             {
                 errorElement: <div className="content d-flex justify-content-center"><ErrorElement /></div>,

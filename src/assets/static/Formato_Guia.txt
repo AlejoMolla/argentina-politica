@@ -1,3 +1,5 @@
+Formato de los Json (Peronismo, Menemismo, Kirchnerismo)
+
 Estructura
 
     id
