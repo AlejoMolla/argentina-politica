@@ -38,7 +38,7 @@ function Content({ data, contentRef }) {
 function Aside({ data, asideRef }) {
     return <>
     
-        <div className="aside col-12 col-sm-12 col-md-3 scrollable" ref={asideRef}>
+        <div className="aside col-12 col-md-3 mt-5 mt-md-0 scrollable" ref={asideRef}>
             {/* CardsComponent se encarga de agregar el contenido al aside */}
             <CardsComponent
                 image={{
