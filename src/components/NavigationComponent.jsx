@@ -6,6 +6,11 @@ import {
     Nav as NavStrap,
     NavItem,
     Collapse,
+
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
 } from 'reactstrap';
 
 // Items de la Nav
@@ -16,21 +21,39 @@ function Nav({ onItemClick }) {
     return <>
     
         <NavStrap navbar className="ms-auto">
-            { // Genera los items de la Nav
-                ITEMS_NAV.map(({id, texto, link}) => (
-                    <NavItem className="my-1 my-md-0" key={id}>
-                        <NavLink
-                            to={link}
-                            className={({isActive}) => 
-                                "nav-link" + (isActive ? " active" : "")
-                            }
-                            onClick={onItemClick}
-                        >
-                            {texto}
-                        </NavLink>
-                    </NavItem>
-                ))
-            }
+            <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                    Secciones
+                </DropdownToggle>
+                <DropdownMenu>
+                    { // Genera los items de la Nav
+                        ITEMS_NAV.map(({id, texto, link}) => (
+                            <DropdownItem className="my-1 my-md-0" key={id}>
+                                <NavLink
+                                    to={link}
+                                    className={({isActive}) => 
+                                        "nav-link text-" + (isActive ? "primary" : "dark")
+                                    }
+                                    onClick={onItemClick}
+                                >
+                                    {texto}
+                                </NavLink>
+                            </DropdownItem>
+                        ))
+                    }
+                </DropdownMenu>
+            </UncontrolledDropdown>
+            <NavItem>
+                <NavLink
+                    to="/articulos"
+                    className={({isActive}) =>
+                        "nav-link" + (isActive ? " active" : "")
+                    }
+                    onClick={onItemClick}
+                >
+                    Artículos
+                </NavLink>
+            </NavItem>
         </NavStrap>
     
     </>
@@ -54,12 +77,32 @@ export default function Navigation({ className = "" }) {
     const toggleNavbar = () => setCollapsed(!collapsed);
     const closeNavbar = () => setCollapsed(true);
 
-    return <Navbar dark className={`navbar-expand-md ${className} primary-bg fixed-top`}>
-        <NavbarBrand />
+    return <Navbar dark className={`navbar-expand-md ${className} primary-bg fixed-top px-4`}>
+            <NavbarBrand />
 
-        <NavbarToggler onClick={toggleNavbar} className="me-2" />
-        <Collapse isOpen={!collapsed} navbar>
-            <Nav onItemClick={closeNavbar} />
-        </Collapse>
+            <NavbarToggler onClick={toggleNavbar} className="me-2" />
+            <Collapse isOpen={!collapsed} navbar>
+                <Nav onItemClick={closeNavbar} />
+            </Collapse>
     </Navbar>
 }
+
+/*
+<NavStrap navbar className="ms-auto">
+            { // Genera los items de la Nav
+                ITEMS_NAV.map(({id, texto, link}) => (
+                    <NavItem className="my-1 my-md-0" key={id}>
+                        <NavLink
+                            to={link}
+                            className={({isActive}) => 
+                                "nav-link" + (isActive ? " active" : "")
+                            }
+                            onClick={onItemClick}
+                        >
+                            {texto}
+                        </NavLink>
+                    </NavItem>
+                ))
+            }
+        </NavStrap>
+*/

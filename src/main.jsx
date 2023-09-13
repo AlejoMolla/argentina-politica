@@ -16,6 +16,9 @@ import FuentesPage from './routes/FuentesPage';
 import PeronismoPage from './routes/Principales/PeronismoPage';
 import MenemismoPage from './routes/Principales/MenemismoPage';
 import KirchnerismoPage from './routes/Principales/KirchnerismoPage';
+import PartidoAutonomistaNacionalPage from './routes/Principales/PartidoAutonomistaNacionalPage';
+import DecadaInfamePage from './routes/Principales/DecadaInfamePage';
+import RadicalismoPage from './routes/Principales/RadicalismoPage';
 
 // - Articulos
 import ArticulosPage, { IndexArticulos } from './routes/Articulos/Index';
@@ -45,6 +48,18 @@ const router = createHashRouter([
                     {
                         path: 'kirchnerismo',
                         element: <KirchnerismoPage />,
+                    },
+                    {
+                        path: 'partido-autonomista-nacional',
+                        element: <PartidoAutonomistaNacionalPage />,
+                    },
+                    {
+                        path: 'radicalismo',
+                        element: <RadicalismoPage />,
+                    },
+                    {
+                        path: 'decada-infame',
+                        element: <DecadaInfamePage />,
                     },
                     {
                         path: 'fuentes',

@@ -16,7 +16,17 @@ export const ITEMS_NAV = [
     },
     {
         "id": 3,
-        "texto": "Artículos",
-        "link": "/articulos"
+        "texto": "Partido Autonomista",
+        "link": "/partido-autonomista-nacional"
+    },
+    {
+        "id": 4,
+        "texto": "Radicalismo",
+        "link": "/radicalismo"
+    },
+    {
+        "id": 5,
+        "texto": "Década Infame",
+        "link": "/decada-infame"
     },
 ];
