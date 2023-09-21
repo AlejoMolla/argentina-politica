@@ -29,4 +29,9 @@ export const ITEMS_NAV = [
         "texto": "Década Infame",
         "link": "/decada-infame"
     },
+    {
+        "id": 6,
+        "texto": "Dictadura",
+        "link": "/dictadura"
+    },
 ];

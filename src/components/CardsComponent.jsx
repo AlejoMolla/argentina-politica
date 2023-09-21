@@ -1,9 +1,34 @@
+import { Link } from 'react-router-dom';
 import {
     Card,
     CardBody,
     CardTitle,
     CardText
 } from 'reactstrap';
+
+// Devuelve un Link si el enlace es de intero, y un <a> si es externo
+function CardLink({link, texto, color, isPageLink}) {
+    if(isPageLink) {
+        return <>
+            <Link
+                to={link}
+                className={`btn btn-${color} me-1 mb-1`}
+            >
+                {texto}
+            </Link>
+        </>
+    } else {
+        return <>
+            <a
+                target="_blank"
+                href={link}
+                className={`btn btn-${color} me-1 mb-1`}
+            >
+                {texto}
+            </a>
+        </>
+    }
+}
 
 // Card que se renderiza en pantallas small (Bootstrap 5)
 function CardVertical({image, body}) {
@@ -21,15 +46,8 @@ function CardVertical({image, body}) {
                             {body.contenido}
                         </p>
                         {body.boton.isButton && // Renderiza el botón (si hay) al final del aside
-                            body.boton.children.map(({color, link, texto}, index) => (
-                                <a
-                                    key={index}
-                                    target="_blank"
-                                    href={link}
-                                    className={`btn btn-${color} me-1 mb-1`}
-                                >
-                                    {texto}
-                                </a>
+                            body.boton.children.map(({color, link, texto, isPageLink}, index) => (
+                                <CardLink color={color} link={link} texto={texto} isPageLink={isPageLink} key={index} />
                             ))
                         }
                     </div>
@@ -60,15 +78,8 @@ function CardHorizontal({ image, body }) {
                     {body.contenido}
                 </CardText>
                 {body.boton.isButton && // Renderiza el botón (si hay) al final del aside
-                    body.boton.children.map(({color, link, texto}, index) => (
-                        <a
-                            key={index}
-                            target="_blank"
-                            href={link}
-                            className={`btn btn-${color} me-1 mb-1`}
-                        >
-                            {texto}
-                        </a>
+                    body.boton.children.map(({color, link, texto, isPageLink}, index) => (
+                        <CardLink color={color} link={link} texto={texto} isPageLink={isPageLink} key={index} />
                     ))
                 }
             </CardBody>
@@ -84,9 +95,10 @@ function CardHorizontal({ image, body }) {
             alt
         },
         body: {
+            
             titulo,
             contenido,
-            boton: {isButton, children}
+            boton: {isButton, children: {color, link, texto, isPageLink}}
         }
     }
 */

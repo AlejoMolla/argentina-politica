@@ -19,6 +19,7 @@ import KirchnerismoPage from './routes/Principales/KirchnerismoPage';
 import PartidoAutonomistaNacionalPage from './routes/Principales/PartidoAutonomistaNacionalPage';
 import DecadaInfamePage from './routes/Principales/DecadaInfamePage';
 import RadicalismoPage from './routes/Principales/RadicalismoPage';
+import DictaduraPage from './routes/Principales/DictaduraPage';
 
 // - Articulos
 import ArticulosPage, { IndexArticulos } from './routes/Articulos/Index';
@@ -61,6 +62,10 @@ const router = createHashRouter([
                     {
                         path: 'decada-infame',
                         element: <DecadaInfamePage />,
+                    },
+                    {
+                        path: 'dictadura',
+                        element: <DictaduraPage />,
                     },
                     {
                         path: 'fuentes',
