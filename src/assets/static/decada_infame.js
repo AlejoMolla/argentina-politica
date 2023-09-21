@@ -4,18 +4,18 @@ export const DECADA_INFAME = [
         "titulo": "La década infame",
         "aside": {
             "imagen": {
-                "src": "",
-                "alt": ""
+                "src": "images/Decada_Infame/DecadaInfame_LaDecadaInfame_JoseFelixBenituUriburu.jpg",
+                "alt": "José Félix Benito Uriburu"
             },
-            "titulo": "",
-            "contenido": "",
+            "titulo": "José Félix Benito Uriburu",
+            "contenido": "José Félix Benito Uriburu fue un militar, dictador y político argentino de orientación fascista que alcanzó el grado de teniente general.",
             "boton": {
-                "isButton": false,
+                "isButton": true,
                 "children": [
                     {
                         "color": "danger",
-                        "link": "",
-                        "texto": ""
+                        "link": "https://www.youtube.com/watch?v=gtFl9snZYIg&ab_channel=DiFilm",
+                        "texto": "Golpe de Estado 1930"
                     }
                 ]
             }
@@ -56,11 +56,11 @@ export const DECADA_INFAME = [
         "titulo": "El gobierno de Justo",
         "aside": {
             "imagen": {
-                "src": "",
-                "alt": ""
+                "src": "images/Decada_Infame/DecadaInfame_ElGobiernoDeJusto_AgustínPedroJusto.jpg",
+                "alt": "Agustín Pedro Justo"
             },
-            "titulo": "",
-            "contenido": "",
+            "titulo": "Agustín Pedro Justo",
+            "contenido": "Agustín Pedro Justo fue un ingeniero, militar, diplomático y político radical​ argentino. Fue presidente de su país entre 1932 y 1938.",
             "boton": {
                 "isButton": false,
                 "children": [
@@ -105,60 +105,14 @@ export const DECADA_INFAME = [
     },
     {
         "id": 2,
-        "titulo": "Medidas para frenar al comunismo",
-        "aside": {
-            "imagen": {
-                "src": "",
-                "alt": ""
-            },
-            "titulo": "",
-            "contenido": "",
-            "boton": {
-                "isButton": false,
-                "children": [
-                    {
-                        "color": "danger",
-                        "link": "",
-                        "texto": ""
-                    }
-                ]
-            }
-        },
-        "contenido": [
-            {
-                "subtitulo": "En Buenos Aires",
-                "texto": [
-                    "El gobernador Fresco, respaldado por Justo, cree que la forma de frenar al comunismo es mejorar un poco las condiciones de vida de los trabajadores, pero también adoctrinarlos. Para eso plantea una reforma educativa, promueve la iglesia y el deporte, tomando ideas del fascismo italiano. También promueve el turismo en la costa bonaerense, construyendo el casino de mar del plata y el hotel provincial, en el Sudoeste de la provincia empiezan a realizarse obras arquitectónicas que parecían futuristas. Mientras tanto, los socialistas, comunistas y anarquistas sufren una violenta represión. Sin embargo, al poco tiempo, Justo le suelta la mano debido a que creía que no defiende lo suficiente la oligarquía, por lo que muchas de sus obras quedan a medias.",
-                ]
-            },
-            {
-                "subtitulo": "En Córdoba ",
-                "texto": [
-                    "Mientras tanto, Sabatini frena al comunismo mediante la justicia social, iniciando un plan de obras públicas y promueve la enseñanza laica. En Córdoba, ya se empezaba a hablar de él como futuro presidente.",
-                ]
-            },
-        ],
-        "boton": {
-            "isButton": false,
-            "children": [
-                {
-                    "color": "" /*"danger"*/,
-                    "link": "" /*"https://arg.ar"*/,
-                    "texto": "" /*"Argentina"*/
-                }
-            ]
-        }
-    }, 
-    {
-        "id": 3,
         "titulo": "El gobierno de Castillo",
         "aside": {
             "imagen": {
-                "src": "",
-                "alt": ""
+                "src": "images/Decada_Infame/DecadaInfame_ElGobiernoDeCastillo_GOU.jpg",
+                "alt": "Grupo de Oficiales Unidos"
             },
-            "titulo": "",
-            "contenido": "",
+            "titulo": "Grupo de Oficiales Unidos",
+            "contenido": "El GOU, Grupo de Oficiales Unidos​ o Grupo Obra de Unificación,​ fue una logia u organización secreta​ argentina de tendencia nacionalista, creada en el seno del Ejército Argentino el 10 de marzo de 1943.",
             "boton": {
                 "isButton": false,
                 "children": [

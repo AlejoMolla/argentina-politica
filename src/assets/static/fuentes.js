@@ -69,4 +69,14 @@ export const FUENTES = [
         "text": 'El historiador, Movimiento Peronista (Consejo Superior) - Las 20 verdades peronistas',
         "link": 'https://www.elhistoriador.com.ar/movimiento-peronista-consejo-superior-las-20-verdades-peronistas/'
     },
+    {
+        "id": 14,
+        "text": "Chequeado, Guerra de Malvinas: ¿cuántas personas participaron y qué ocurre hoy con los veteranos?",
+        "link": "https://chequeado.com/el-explicador/guerra-de-malvinas-cuantas-personas-participaron-y-que-ocurre-hoy-con-los-veteranos/comment-page-3/"
+    },
+    {
+        "id": 15,
+        "text": "El baúl de los conocimientos inútiles, ¿Por qué perdió Argentina la guerra de las Malvinas?",
+        "link": "https://www.youtube.com/watch?v=bsCFhbo6zCA&ab_channel=elbaúldelosconocimientosinútiles"
+    }
 ];

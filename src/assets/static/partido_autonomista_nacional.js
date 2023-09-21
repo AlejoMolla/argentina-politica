@@ -4,7 +4,7 @@ export const PARTIDO_AUTONOMISTA_NACIONAL = [
         "titulo": "El comienzo del Estado Argentino",
         "aside": {
             "imagen": {
-                "src": "",
+                "src": "images/Partido_Autonomista/PartidoAutonomista_ElComienzoDelEstadoArgentino_JulioArgentinoRoca.jpg",
                 "alt": "Alejo Julio Argentino Roca"
             },
             "titulo": "Alejo Julio Argentino Roca",
@@ -56,7 +56,7 @@ export const PARTIDO_AUTONOMISTA_NACIONAL = [
         "titulo": "El orden conservador",
         "aside": {
             "imagen": {
-                "src": "",
+                "src": "images/Partido_Autonomista/PartidoAutonomista_ElOrdenConservador_LeandroNAlem.jpg",
                 "alt": "Leandro N. Alem"
             },
             "titulo": "Leandro N. Alem",
@@ -108,7 +108,7 @@ export const PARTIDO_AUTONOMISTA_NACIONAL = [
         "titulo": "Tiempos violentos",
         "aside": {
             "imagen": {
-                "src": "",
+                "src": "images/Partido_Autonomista/PartidoAutonomista_TiemposViolentos_SemanaRoja.jpg",
                 "alt": "Semana Roja"
             },
             "titulo": "Semana Roja",

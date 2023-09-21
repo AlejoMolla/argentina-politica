@@ -191,13 +191,8 @@ export const PERONISMO = [
                 "children": [
                     {
                         "color": "link",
-                        "link": "https://es.wikipedia.org/wiki/Veinte_Verdades_Peronistas",
-                        "texto": "Veinte Verdades Peronistas"
-                    },
-                    {
-                        "color": "link",
-                        "link": "https://es.wikipedia.org/wiki/D%C3%ADa_de_la_Lealtad",
-                        "texto": "Día de la lealtad"
+                        "link": "https://www.youtube.com/watch?v=QAakF5jX4do&ab_channel=marc3168",
+                        "texto": "Bombardeo a la Plaza de Mayo"
                     },
                 ]
             }
@@ -223,20 +218,14 @@ export const PERONISMO = [
                     "Ante las amenazas de sublevaciones, se trasladó al ministerio de guerra, donde formó la resistencia junto con los oficiales leales. Sumado a esto, al enterarse del ataque, diversos grupos de obreros salieron a luchar por Peron, él intentó evitarlo, debido a que no quería más víctimas, sin embargo sus intentos fueron inútiles. Para las 4 de la tarde los aviones tiraron sus últimas bombas escapando a Montevideo, dejando a 300 civiles inocentes fallecidos y el doble de heridos, capitalizando la primera vez en la historia mundial que un ejército bombardea a sus propios ciudadanos. Luego del bombardeo el presidente intenta llevar paz, pero es un vano, el 16 de septiembre el general Lombardi inicia un levantamiento a gran escala entre los oficiales leales y las fuerzas armadas. Ante esta situación Perón decide renunciar a su presidencia, exiliarse en primer lugar en Paraguay.",
                 ]
             },
-            {
-                "subtitulo": "Referencias",
-                "texto": [
-                    ""
-                ]
-            }
         ],
         "boton": {
-            "isButton": true,
+            "isButton": false,
             "children": [
                 {
-                    "color": "link",
-                    "link": "https://www.youtube.com/watch?v=QAakF5jX4do&ab_channel=marc3168",
-                    "texto": "¹Bombardeo a la Plaza de Mayo"
+                    "color": "" /*"link"*/,
+                    "link": "" /*"https://www.youtube.com/watch?v=QAakF5jX4do&ab_channel=marc3168"*/,
+                    "texto": "",
                 },
             ]
         }

@@ -17,4 +17,10 @@ export const ARTICULOS = [
         "alt": 'Foto de Jose de San Martín',
         "link": '/articulos/san_martin'
     },
+    {
+        "id": 3,
+        "src": 'images/Articulos/La_guerra_de_malvinas.png',
+        "alt": 'Foto de La guerra de Malvinas',
+        "link": '/articulos/guerra_de_malvinas'
+    },
 ];

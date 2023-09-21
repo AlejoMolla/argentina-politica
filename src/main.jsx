@@ -25,6 +25,7 @@ import ArticulosPage, { IndexArticulos } from './routes/Articulos/Index';
 import IlustresPage from './routes/Articulos/IlustresPage';
 import SanMartinPage from './routes/Articulos/SanMartinPage';
 import MusicaEnArgentinaPage from './routes/Articulos/MusicaEnArgentinaPage';
+import GuerraDeMalvinasPage from './routes/Articulos/GuerraDeMalvinasPage';
 
 const router = createHashRouter([
     {
@@ -81,6 +82,10 @@ const router = createHashRouter([
                             {
                                 path: 'musica_argentina',
                                 element: <MusicaEnArgentinaPage />
+                            },
+                            {
+                                path: 'guerra_de_malvinas',
+                                element: <GuerraDeMalvinasPage />
                             }
                         ]
                     }

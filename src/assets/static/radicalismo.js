@@ -4,7 +4,7 @@ export const RADICALISMO = [
         "titulo": "Los inicios de la democracia",
         "aside": {
             "imagen": {
-                "src": "",
+                "src": "images/Radicalismo/Radicalismo_LosIniciosDeLaDemocracia_LeySaenzPeña.jpg",
                 "alt": "La ley Sáenz Peña"
             },
             "titulo": "Ley Sáenz Peña",
@@ -56,11 +56,11 @@ export const RADICALISMO = [
         "titulo": "El Gobierno de Alvear",
         "aside": {
             "imagen": {
-                "src": "",
-                "alt": "La ley Sáenz Peña"
+                "src": "images/Radicalismo/Radicalismo_ElGobiernoDeAlvear_Alvear.jpg",
+                "alt": "Máximo Marcelo Torcuato de Alvear Pacheco"
             },
-            "titulo": "Ley Sáenz Peña",
-            "contenido": "Ley Sáenz Peña es como se conoce a la Ley 8871, sancionada por el Congreso de la Nación Argentina el 10 de febrero de 1912, que estableció el voto secreto, obligatorio para los ciudadanos argentinos nativos y naturalizados, mayores de los 18 años de edad -aún cuando la mayoría de edad estaba establecida en ese momento en 22 años-,​ que estuvieran inscriptos en el padrón electoral que se confeccionaba con los datos provenientes del servicio militar obligatorio.",
+            "titulo": "Máximo Marcelo Torcuato de Alvear Pacheco",
+            "contenido": "Máximo Marcelo Torcuato de Alvear Pacheco fue un abogado y político argentino perteneciente a la Unión Civíca Radical de tendencia liberal3​4​5​ que se desempeñó como embajador en Francia, diputado y presidente de la Nación Argentina entre el 12 de octubre de 1922 y la misma fecha del año 1928.",
             "boton": {
                 "isButton": false,
                 "children": [
